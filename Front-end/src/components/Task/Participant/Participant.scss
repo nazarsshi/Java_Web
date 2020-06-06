@@ -1,0 +1,32 @@
+@import './public/assets/_vars.scss';
+
+.task-participant-img-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
+    height:100%;
+  }
+}
+.default-task-block.task-participant-block {
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+.task-participant-link {
+  color: $default-text-color;
+
+  &:hover {
+    text-decoration: none;
+    color: lighten($default-text-color, 10%);
+
+  }
+}
+
+.participant-comment-block {
+  border-top: 1px solid lighten($default-text-color, 50%);
+  padding-top: 10px;
+}

@@ -1,0 +1,52 @@
+@import './public/assets/_vars.scss';
+
+.form-group {
+  margin-bottom: calc(1em - 15px);
+
+  .form-div {
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .sign-form-input {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $default-input-border-color;
+      padding: 6px 30px;
+      font: 400 16px Roboto;
+      box-sizing: border-box;
+      transition: 0.5s;
+      border-radius: 0;
+      box-shadow: none;
+
+      &:focus {
+        box-shadow: none;
+        border-bottom: 1px solid darken($default-input-border-color, 40%);
+      }
+
+      &.error {
+        border-bottom: 1px solid $error-color;
+      }
+    }
+
+    .label-icon {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      color: $default-text-color;
+      transform: translateY(-50%);
+    }
+  }
+
+  .sign-form-error-text {
+    min-height: 15px;
+    width: 100%;
+    margin: 0;
+    padding: 1px 0;
+    line-height: 1;
+    font-size: 10px;
+    color: $error-color;
+  }
+}
